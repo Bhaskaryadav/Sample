@@ -24,6 +24,8 @@ public class SampleData {
 			"jdbc:oracle:thin:@localhost:1521:xe","system","bhaskar");  
 			  
 			String sqlSelectQuery = "select * from customer";
+			String str = "select * from employee";
+			System.out.println(str);
 			//step3 create the statement object  
 			preparedStatement = connection.prepareStatement(sqlSelectQuery );  
 			  
