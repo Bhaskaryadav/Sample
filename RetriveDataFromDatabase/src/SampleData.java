@@ -1,3 +1,5 @@
+package src;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -11,7 +13,7 @@ public class SampleData {
 		
 		Connection connection = null;
         PreparedStatement preparedStatement = null;
-        ResultSet rs = null;
+        ResultSet rs = null; 
 		
 		try{  
 			//step1 load the driver class  
