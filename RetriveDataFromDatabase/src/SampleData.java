@@ -8,7 +8,11 @@ public class SampleData {
 
 	public static void main(String[] args) {
 		System.out.println("Inside Method");
+		getConnection();
 		
+	}
+	
+	public static Connection getConnection() {
 		Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet rs = null;
@@ -36,8 +40,11 @@ public class SampleData {
 			//step5 close the connection object  
 			connection.close();  
 			  
-			}catch(Exception e){ System.out.println(e);}  
+			}catch(Exception e){ System.out.println(e);}
+		return connection;  
 			  
 	}
+	
+
 
 }
