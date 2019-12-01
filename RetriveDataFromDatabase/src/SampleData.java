@@ -1,4 +1,4 @@
-package src;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -20,8 +20,8 @@ public class SampleData {
 			Class.forName("oracle.jdbc.driver.OracleDriver");  
 			  
 			//step2 create  the connection object  
-			 connection=DriverManager.getConnection(  
-			"jdbc:oracle:thin:@localhost:1521:xe","system","bhaskar");  
+			 connection=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","bhaskar");  
+			 System.out.println("Connection established");
 			  
 			String sqlSelectQuery = "select * from customer";
 			String str = "select * from employee";
