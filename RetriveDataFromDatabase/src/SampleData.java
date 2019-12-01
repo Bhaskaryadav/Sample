@@ -24,6 +24,7 @@ public class SampleData {
 			//step2 create  the connection object  
 			 connection=DriverManager.getConnection(  
 			"jdbc:oracle:thin:@localhost:1521:xe","system","bhaskar");  
+			 System.out.println("Connection established");
 			  
 			String sqlSelectQuery = "select * from customer";
 			//step3 create the statement object  
