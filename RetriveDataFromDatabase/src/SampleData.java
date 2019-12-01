@@ -29,6 +29,7 @@ public class SampleData {
 			String sqlSelectQuery = "select * from customer";
 			//step3 create the statement object  
 			preparedStatement = connection.prepareStatement(sqlSelectQuery );  
+			System.out.println("Prepared statement created");
 			  
 			//step4 execute query  
 			rs = preparedStatement.executeQuery();
